@@ -1,0 +1,118 @@
+:root {
+  --rotation: 0deg;
+  --scepter-rotation: 135deg;
+}
+
+body {
+  font-family: "Varela Round", sans-serif;
+  background-color: #264653;
+  color: #2a9d8f;
+}
+
+#wheel {
+  background-color: #386641;
+  width: 600px;
+  height: 600px;
+  border-radius: 100%;
+  margin: auto;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  margin-top: 50px;
+  border-color: #e76f51;
+  border-style: solid;
+  border-width: 10px;
+  transform: rotate(var(--rotation));
+  transition: all ease-out 3s;
+}
+
+#pin {
+  width: 70px;
+  height: 70px;
+  font-size: 20px;
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: #e76f51;
+  color: #f0f0f0;
+  top: 265px;
+  z-index: 100;
+  border-radius: 100%;
+  text-align: center;
+  cursor: pointer;
+  vertical-align: middle;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 70px;
+}
+
+#yes {
+  border-color: #e76f51;
+  border-bottom-width: 10px;
+  border-bottom-style: solid;
+  background-color: #e9c46a;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  height: 250px;
+  justify-content: center;
+  display: flex;
+  font-size: 100px;
+  padding-top: 50px;
+}
+
+#no {
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: #f4a261;
+  height: 50vh;
+  justify-content: center;
+  display: flex;
+  font-size: 100px;
+  padding-top: 100px;
+  transform: rotate(180deg);
+}
+
+#scepter {
+  position: absolute;
+  top: 10px;
+  transform: rotate(var(--scepter-rotation));
+  left: 30px;
+  right: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.Y {
+  transform: rotate(-30deg);
+}
+
+.E {
+  transform: rotate(0deg);
+}
+
+.S {
+  transform: rotate(30deg);
+}
+
+.N {
+  transform: rotate(-10deg);
+  padding-top: 200px;
+}
+
+.O {
+  transform: rotate(10deg);
+  padding-left: 15px;
+  padding-top: 200px;
+}
